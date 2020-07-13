@@ -18,19 +18,14 @@ function activate(context) {
   let fileLinkDisposible = vscode.commands.registerCommand(
     "extend.insertLink",
     () => {
-      const linkTypeList = ["File", "Image"];
+      const linkTypeList = ["classComponent", "hooksComponent"];
       vscode.window
-        .showQuickPick(linkTypeList, { placeHolder: "Link Type" })
+        .showQuickPick(linkTypeList, { placeHolder: "Snippets - React" })
         .then((result) => {
-          if (result === "File") {
-            // utils.insertText(
-            //   vscode.workspace.getConfiguration("csfe")["filePathTemplate"]
-            // );
-            utils.insertText(utils.getTemplate());
+          if (result === "classComponent") {
+            utils.insertText(utils.getTemplate().templateForClass);
           } else {
-            utils.insertText(
-              vscode.workspace.getConfiguration("csfe")["imagePathTemplate"]
-            );
+            utils.insertText(utils.getTemplate().templateForHooks);
           }
         });
     }
