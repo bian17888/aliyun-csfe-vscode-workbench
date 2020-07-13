@@ -2,7 +2,7 @@
   "name": "aliyun-csfe-vscode-workbench",
   "displayName": "Aliyun CSFE vscode workbench",
   "description": "A vscode workbench developed by Aliyun CSFE team",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "aliyun-csfe",
   "repository": {
     "type": "git",
