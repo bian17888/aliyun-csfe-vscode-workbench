@@ -1,8 +1,22 @@
 {
-  "name": "csfe-snippets",
-  "displayName": "csfe-snippets",
-  "description": "csfe-snippets",
+  "name": "aliyun-csfe-vscode-workbench",
+  "displayName": "Aliyun CSFE vscode workbench",
+  "description": "A vscode workbench developed by Aliyun CSFE team",
   "version": "0.0.1",
+  "publisher": "@aliyun/csfe",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bian17888/aliyun-csfe-vscode-workbench.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bian17888/aliyun-csfe-vscode-workbench/issues"
+  },
+  "homepage": "https://github.com/bian17888/aliyun-csfe-vscode-workbench/blob/master/README.md",
+  "icon": "images/csfe_logo.png",
+  "galleryBanner": {
+    "color": "#fff",
+    "theme": "light"
+  },
   "engines": {
     "vscode": "^1.47.0"
   },
@@ -10,8 +24,8 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:csfe-snippets.insertLink",
-    "onCommand:csfe-snippets.insertFigure"
+    "onCommand:extend.insertLink",
+    "onCommand:extend.insertFigure"
   ],
   "main": "./extension.js",
   "contributes": {
@@ -33,23 +47,23 @@
     },
     "commands": [
       {
-        "command": "csfe-snippets.insertLink",
+        "command": "extend.insertLink",
         "title": "Insert Link"
       },
       {
-        "command": "csfe-snippets.insertFigure",
+        "command": "extend.insertFigure",
         "title": "Insert Figure"
       }
     ],
     "keybindings": [
       {
-        "command": "csfe-snippets.insertLink",
+        "command": "extend.insertLink",
         "key": "shift+ctrl+l",
         "mac": "shift+cmd+l",
         "when": "editorTextFocus"
       },
       {
-        "command": "csfe-snippets.insertFigure",
+        "command": "extend.insertFigure",
         "key": "shift+ctrl+i",
         "mac": "shift+cmd+i",
         "when": "editorTextFocus"

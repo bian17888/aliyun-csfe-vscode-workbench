@@ -13,10 +13,10 @@ const utils = require("./utils");
 function activate(context) {
   // Use the console to output diagnostic information (console.log) and errors (console.error)
   // This line of code will only be executed once when your extension is activated
-  console.log('Congratulations, your extension "csfe-snippets" is now active!');
+  console.log('Congratulations, your extension "csfe" is now active!');
 
   let fileLinkDisposible = vscode.commands.registerCommand(
-    "csfe-snippets.insertLink",
+    "extend.insertLink",
     () => {
       const linkTypeList = ["File", "Image"];
       vscode.window
@@ -38,7 +38,7 @@ function activate(context) {
   context.subscriptions.push(fileLinkDisposible);
 
   let figureDisposible = vscode.commands.registerCommand(
-    "csfe-snippets.insertFigure",
+    "extend.insertFigure",
     () => {
       vscode.window.showInformationMessage("insert figure tag");
     }
