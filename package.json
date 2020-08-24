@@ -43,7 +43,7 @@
       ]
     },
     "views": {
-      "csfe-workbench":[
+      "csfe-workbench": [
         {
           "id": "docs",
           "name": "Docs"
@@ -53,10 +53,25 @@
           "name": "Devs"
         }
       ]
-    }
+    },
+    "commands": [
+      {
+        "title": "csfe code snippets",
+        "command": "csfe.cmd.snippets"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "csfe.cmd.snippets",
+        "key": "Ctrl+c s",
+        "mac": "Ctrl+c s",
+        "when": "editorTextFocus"
+      }
+    ]
   },
   "activationEvents": [
     "onView:docs",
-    "onView:devs"
+    "onView:devs",
+    "onCommand:csfe.cmd.snippets"
   ]
 }
