@@ -1,7 +1,7 @@
 {
-  "name": "test",
-  "displayName": "test",
-  "description": "test",
+  "name": "aliyun-csfe-workbench",
+  "displayName": "aliyun-csfe-workbench",
+  "description": "aliyun-csfe-workbench",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.47.0"
@@ -9,37 +9,7 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "onView:nodeDependencies"
-  ],
   "main": "./out/extension.js",
-  "contributes": {
-    "viewsContainers": {
-      "activitybar": [
-        {
-          "id": "package-explorer",
-          "title": "Package Explorer",
-          "icon": "media/dep.svg"
-        }
-      ]
-    },
-    "views": {
-      "package-explorer": [
-        {
-          "id": "nodeDependencies",
-          "name": "Node Dependencies",
-          "icon": "media/dep.svg",
-          "contextualTitle": "Package Explorer"
-        }
-      ]
-    },
-    "commands": [
-      {
-        "command": "test.helloWorld",
-        "title": "Hello World"
-      }
-    ]
-  },
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
@@ -61,5 +31,32 @@
     "prettier": "^2.0.5",
     "typescript": "^3.8.3",
     "vscode-test": "^1.3.0"
-  }
+  },
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "csfe-workbench",
+          "title": "CSFE Workbench",
+          "icon": "media/dep.svg"
+        }
+      ]
+    },
+    "views": {
+      "csfe-workbench":[
+        {
+          "id": "docs",
+          "name": "Docs"
+        },
+        {
+          "id": "devs",
+          "name": "Devs"
+        }
+      ]
+    }
+  },
+  "activationEvents": [
+    "onView:docs",
+    "onView:devs"
+  ]
 }
