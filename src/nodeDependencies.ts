@@ -7,11 +7,11 @@ const itemsData = [
     collapsibleState: vscode.TreeItemCollapsibleState.Collapsed,
     children: [
       {
-        label: "beck1",
+        label: "梦琪平台",
         collapsibleState: vscode.TreeItemCollapsibleState.None,
       },
       {
-        label: "beck2",
+        label: "语雀平台",
         collapsibleState: vscode.TreeItemCollapsibleState.None,
       },
     ],
@@ -71,11 +71,9 @@ export class Dependency extends vscode.TreeItem {
   constructor(
     public label: string,
     public collapsibleState: vscode.TreeItemCollapsibleState,
-    public children?: Dependency[],
-    public tooltip?: string
+    public children?: Dependency[]
   ) {
     super(label, collapsibleState);
-    this.tooltip = tooltip || "";
   }
 
   iconPath = {
@@ -95,5 +93,10 @@ export class Dependency extends vscode.TreeItem {
       "dark",
       "dependency.svg"
     ),
+  };
+
+  command = {
+    title: "tmp",
+    command: "csfe.cmd.tmp",
   };
 }

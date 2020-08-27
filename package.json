@@ -58,6 +58,10 @@
       {
         "title": "csfe code snippets",
         "command": "csfe.cmd.snippets"
+      },
+      {
+        "title": "csfe tmp",
+        "command": "csfe.cmd.tmp"
       }
     ],
     "keybindings": [
@@ -72,6 +76,7 @@
   "activationEvents": [
     "onView:docs",
     "onView:devs",
-    "onCommand:csfe.cmd.snippets"
+    "onCommand:csfe.cmd.snippets",
+    "onCommand:csfe.cmd.tmp"
   ]
 }
