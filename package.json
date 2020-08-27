@@ -45,12 +45,12 @@
     "views": {
       "csfe-workbench": [
         {
-          "id": "docs",
-          "name": "Docs"
+          "id": "team",
+          "name": "团队空间"
         },
         {
-          "id": "devs",
-          "name": "Devs"
+          "id": "developer",
+          "name": "开发者空间"
         }
       ]
     },
@@ -74,8 +74,8 @@
     ]
   },
   "activationEvents": [
-    "onView:docs",
-    "onView:devs",
+    "onView:team",
+    "onView:developer",
     "onCommand:csfe.cmd.snippets",
     "onCommand:csfe.cmd.tmp"
   ]
