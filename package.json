@@ -71,8 +71,9 @@
     "keybindings": [
       {
         "command": "csfe.cmd.snippets",
-        "key": "Ctrl+c s",
-        "mac": "Ctrl+c s",
+        "key": "Ctrl+c",
+        "win": "Alt+c",
+        "mac": "Ctrl+c",
         "when": "editorTextFocus"
       }
     ]
