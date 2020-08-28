@@ -32,37 +32,62 @@ export const team: any = [
 
 export const developer: any = [
   {
-    label: "开发者",
-    collapsibleState: vscode.TreeItemCollapsibleState.Collapsed,
+    label: "公有云",
+    collapsibleState: vscode.TreeItemCollapsibleState.Expanded,
     children: [
       {
-        label: "公有云",
-        collapsibleState: vscode.TreeItemCollapsibleState.Collapsed,
-        children: [
-          {
-            label: "cs dev",
-            collapsibleState: vscode.TreeItemCollapsibleState.None,
-          },
-          {
-            label: "cs dev --proxy",
-            collapsibleState: vscode.TreeItemCollapsibleState.None,
-          },
-          {
-            label: "cs login",
-            collapsibleState: vscode.TreeItemCollapsibleState.None,
-          },
-          {
-            label: "cs p",
-            collapsibleState: vscode.TreeItemCollapsibleState.None,
-          },
-          {
-            label: "cs p -o",
-            collapsibleState: vscode.TreeItemCollapsibleState.None,
-          },
-        ],
+        label: "cs dev",
+        collapsibleState: vscode.TreeItemCollapsibleState.None,
+        command: {
+          title: "run shell",
+          command: "csfe.cmd.navs.runShell",
+          arguments: ["cs dev"],
+        },
       },
       {
-        label: "专有云",
+        label: "cs dev --proxy",
+        collapsibleState: vscode.TreeItemCollapsibleState.None,
+        command: {
+          title: "run shell",
+          command: "csfe.cmd.navs.runShell",
+          arguments: ["cs dev --proxy"],
+        },
+      },
+      {
+        label: "cs login",
+        collapsibleState: vscode.TreeItemCollapsibleState.None,
+        command: {
+          title: "run shell",
+          command: "csfe.cmd.navs.runShell",
+          arguments: ["cs login"],
+        },
+      },
+      {
+        label: "cs p",
+        collapsibleState: vscode.TreeItemCollapsibleState.None,
+        command: {
+          title: "run shell",
+          command: "csfe.cmd.navs.runShell",
+          arguments: ["cs p"],
+        },
+      },
+      {
+        label: "cs p -o",
+        collapsibleState: vscode.TreeItemCollapsibleState.None,
+        command: {
+          title: "run shell",
+          command: "csfe.cmd.navs.runShell",
+          arguments: ["cs p -o"],
+        },
+      },
+    ],
+  },
+  {
+    label: "专有云",
+    collapsibleState: vscode.TreeItemCollapsibleState.Expanded,
+    children: [
+      {
+        label: "建设中...",
         collapsibleState: vscode.TreeItemCollapsibleState.None,
       },
     ],

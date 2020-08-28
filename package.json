@@ -62,6 +62,10 @@
       {
         "title": "csfe navs open website",
         "command": "csfe.cmd.navs.openWebsite"
+      },
+      {
+        "title": "csfe navs run shell",
+        "command": "csfe.cmd.navs.runShell"
       }
     ],
     "keybindings": [
@@ -77,6 +81,7 @@
     "onView:team",
     "onView:developer",
     "onCommand:csfe.cmd.snippets",
-    "onCommand:csfe.cmd.navs.openWebsite"
+    "onCommand:csfe.cmd.navs.openWebsite",
+    "onCommand:csfe.cmd.navs.runShell"
   ]
 }

@@ -37,13 +37,23 @@ export function activate(context: vscode.ExtensionContext) {
   );
   context.subscriptions.push(codeSnippets);
 
-  // command for open website
+  // command for navs open website
   const openWebsite = vscode.commands.registerCommand(
     "csfe.cmd.navs.openWebsite",
     (args) => {
-      console.log(args);
       vscode.commands.executeCommand("vscode.open", vscode.Uri.parse(args));
     }
   );
   context.subscriptions.push(openWebsite);
+
+  // command for navs run shell
+  const runShell = vscode.commands.registerCommand(
+    "csfe.cmd.navs.runShell",
+    (args) => {
+      const terminal = vscode.window.createTerminal(args);
+      terminal.show();
+      terminal.sendText(args);
+    }
+  );
+  context.subscriptions.push(runShell);
 }
