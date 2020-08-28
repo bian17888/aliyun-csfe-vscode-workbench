@@ -2,7 +2,7 @@
   "name": "aliyun-csfe-vscode-workbench",
   "displayName": "Aliyun CSFE vscode workbench",
   "description": "A vscode workbench developed by Aliyun CSFE team",
-  "version": "0.0.4",
+  "version": "0.0.3",
   "publisher": "aliyun-csfe",
   "repository": {
     "type": "git",
@@ -12,7 +12,7 @@
     "url": "https://github.com/bian17888/aliyun-csfe-vscode-workbench/issues"
   },
   "homepage": "https://github.com/bian17888/aliyun-csfe-vscode-workbench/blob/master/README.md",
-  "icon": "images/csfe_logo.png",
+  "icon": "resources/extension_logo.png",
   "galleryBanner": {
     "color": "#fff",
     "theme": "light"
