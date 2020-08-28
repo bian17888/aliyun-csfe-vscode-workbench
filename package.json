@@ -1,19 +1,28 @@
 {
-  "name": "aliyun-csfe-workbench",
-  "displayName": "aliyun-csfe-workbench",
-  "description": "aliyun-csfe-workbench",
+  "name": "aliyun-csfe-vscode-workbench",
+  "displayName": "Aliyun CSFE vscode workbench",
+  "description": "A vscode workbench developed by Aliyun CSFE team",
   "version": "0.0.4",
   "publisher": "aliyun-csfe",
-  "engines": {
-    "vscode": "^1.47.0"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bian17888/aliyun-csfe-vscode-workbench"
+    "url": "https://github.com/bian17888/aliyun-csfe-vscode-workbench.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bian17888/aliyun-csfe-vscode-workbench/issues"
+  },
+  "homepage": "https://github.com/bian17888/aliyun-csfe-vscode-workbench/blob/master/README.md",
+  "icon": "images/csfe_logo.png",
+  "galleryBanner": {
+    "color": "#fff",
+    "theme": "light"
   },
   "categories": [
     "Other"
   ],
+  "engines": {
+    "vscode": "^1.47.0"
+  },
   "main": "./out/extension.js",
   "scripts": {
     "vscode:prepublish": "npm run compile",
