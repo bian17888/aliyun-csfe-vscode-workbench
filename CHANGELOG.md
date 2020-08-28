@@ -1,9 +1,15 @@
 # Change Log
 
-All notable changes to the "test" extension will be documented in this file.
+## 0.0.2 - 20200828
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+### Added
 
-## [Unreleased]
+- Menus : Team and Developer
+- Code Snippets : The Keyboards Shortcuts are `Ctrl+c` (MAC) and `Alt+c` (Win)
+- Support for CS-Kit shell
 
-- Initial release
+## 0.0.1 - 20200713
+
+### Added
+
+- POC version
