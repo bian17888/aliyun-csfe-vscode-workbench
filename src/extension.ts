@@ -37,12 +37,13 @@ export function activate(context: vscode.ExtensionContext) {
   );
   context.subscriptions.push(codeSnippets);
 
-  const tmp = vscode.commands.registerCommand(
-    "csfe.cmd.tmp",
-    (node: TeamItem) => {
-      vscode.window.showInformationMessage("tmp");
-      console.log(node);
+  // command for open website
+  const openWebsite = vscode.commands.registerCommand(
+    "csfe.cmd.navs.openWebsite",
+    (args) => {
+      console.log(args);
+      vscode.commands.executeCommand("vscode.open", vscode.Uri.parse(args));
     }
   );
-  context.subscriptions.push(tmp);
+  context.subscriptions.push(openWebsite);
 }
