@@ -2,7 +2,7 @@
   "name": "aliyun-csfe-workbench",
   "displayName": "aliyun-csfe-workbench",
   "description": "aliyun-csfe-workbench",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "aliyun-csfe",
   "engines": {
     "vscode": "^1.47.0"
