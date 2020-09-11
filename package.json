@@ -1,7 +1,7 @@
 {
-  "name": "aliyun-csfe-workbench",
-  "displayName": "aliyun-csfe-workbench",
-  "description": "aliyun-csfe-workbench",
+  "name": "aliyun-csfe-vscode-workbench",
+  "displayName": "aliyun-csfe-vscode-workbench",
+  "description": "aliyun-csfe-vscode-workbench",
   "version": "0.0.5",
   "publisher": "aliyun-csfe",
   "engines": {
