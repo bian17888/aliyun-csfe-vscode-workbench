@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.0.7 - 20200911
+
+### Added
+
+- Code Snippets : like cslog, csfuncP csif ...
+
 ## 0.0.2 - 20200828
 
 ### Added
