@@ -28,7 +28,5 @@ const insertSnippet = function (value: string) {
 
   const selection = editor.selection;
   const range = new vscode.Range(selection.start, selection.end);
-  editor.edit((editBuilder) => {
-    editBuilder.replace(range, value);
-  });
+  editor.insertSnippet(new vscode.SnippetString(value));
 };

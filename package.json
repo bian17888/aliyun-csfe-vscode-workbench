@@ -81,6 +81,12 @@
         "mac": "Ctrl+c",
         "when": "editorTextFocus"
       }
+    ],
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./src/snippets/javascript.json"
+      }
     ]
   },
   "activationEvents": [
