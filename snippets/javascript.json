@@ -2,17 +2,17 @@
   "cs //50": {
     "prefix": "cs//50",
     "description": "cs //50",
-    "body": ["// ////////////////////////////////////////////////", ""]
+    "body": ["// ////////////////////////////////////////////////", "$0"]
   },
   "cs log": {
     "prefix": "cslog",
     "description": "cs log",
-    "body": ["console.log(`${content}`)", "$0"]
+    "body": ["console.log(`${1:content}`)", "$0"]
   },
   "cs log==": {
     "prefix": "cslog==",
     "description": "cs log==",
-    "body": ["console.log('====${content}=====')", "$0"]
+    "body": ["console.log('====${1:content}=====')", "$0"]
   },
   "cs funcP": {
     "prefix": "csfuncP",
