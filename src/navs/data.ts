@@ -28,6 +28,15 @@ export const team: any = [
       arguments: ["https://microx.aliyun-inc.com/overview"],
     },
   },
+  {
+    label: "维纳斯平台",
+    collapsibleState: vscode.TreeItemCollapsibleState.None,
+    command: {
+      title: "open website",
+      command: "csfe.cmd.navs.openWebsite",
+      arguments: ["https://microx.aliyun-inc.com/venus#/chart"],
+    },
+  },
 ];
 
 export const developer: any = [

@@ -2,7 +2,7 @@
   "name": "aliyun-csfe-vscode-workbench",
   "displayName": "Aliyun CSFE vscode workbench",
   "description": "A vscode workbench developed by Aliyun CSFE team",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "publisher": "aliyun-csfe",
   "repository": {
     "type": "git",
@@ -89,6 +89,12 @@
         "win": "Alt+c",
         "mac": "Ctrl+c",
         "when": "editorTextFocus"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./src/snippets/javascript.json"
       }
     ]
   },
